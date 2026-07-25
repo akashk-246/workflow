@@ -20,11 +20,11 @@ jobs:
         run: echo "Running tests..."
 
   lint:
-      needs: build
-      runs-on: ubuntu-latest
-      steps:
-        - name: lint
-        - run: echo "Lint"
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: lint
+      - run: echo "Lint"
 
   deploy:
     needs: 
