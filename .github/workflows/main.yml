@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  hello:
+  B2b_Pipeline:
     runs-on: ubuntu-latest
 
     steps:
