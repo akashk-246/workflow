@@ -22,9 +22,10 @@ jobs:
   lint:
     needs: build
     runs-on: ubuntu-latest
+
     steps:
       - name: lint
-      - run: echo "Lint"
+        run: echo "Lint"
 
   deploy:
     needs: 
