@@ -1,4 +1,4 @@
-name: My First Workflow
+name: Python CI
 
 on:
   push:
@@ -22,3 +22,6 @@ jobs:
 
       - name: Run Script
         run: python hello.py
+
+      - name: Done
+        run: echo "Pipeline run completed successfully"
