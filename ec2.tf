@@ -136,15 +136,15 @@ resource "aws_instance" "web1" {
 
 # #11. EC2 DB1
 resource "aws_instance" "db1" {
-  ami           = var.Ami_id
-  instance_type = "t3.micro"
-  subnet_id = aws_subnet.pri_sub1.id
-  key_name = "demo-key"
+  ami                    = var.Ami_id
+  instance_type          = "t3.micro"
+  subnet_id              = aws_subnet.pri_sub1.id
+  key_name               = "demo-key"
   vpc_security_group_ids = [aws_security_group.sg1.id]
 
 
   tags = {
-    Name = "${var.customer}-db1"
+    Name       = "${var.customer}-db1"
     Managed_by = var.managed_by
   }
 }
